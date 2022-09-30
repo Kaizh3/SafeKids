@@ -1,0 +1,2 @@
+rootProject.name = "ParentControl3"
+include ':app'

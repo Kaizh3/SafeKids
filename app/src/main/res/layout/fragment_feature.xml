@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.feature.FeatureFragment"
+    android:layout_marginTop="6dp"
+    android:id="@+id/feature_fragment">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_usage_control"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_shape"
+        android:text="Usage Control"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <Button
+        android:id="@+id/btn_application_management"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_shape"
+        android:text="Application Management"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_usage_control" />
+
+    <Button
+        android:id="@+id/btn_content_filtering"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_shape"
+        android:text="Content Filtering"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_application_management" />
+
+    <Button
+        android:id="@+id/btn_disable_feature"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_shape"
+        android:text="Device Restriction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_content_filtering" />
+
+    <Button
+        android:id="@+id/btn_calls_sms_log"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_shape"
+        android:text="Calls and SMS"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_disable_feature" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

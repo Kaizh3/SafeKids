@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="6dp"
+    tools:context=".ui.feature.fragment.UsageControlFragment">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Set Screen Time limit"
+        android:textColor="@color/wood"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="serif"
+        android:textSize="12dp"
+        android:text="Enter how long you want your device to stay on before turning off due to inactivity"/>
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textSize="20dp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <Button
+        android:id="@+id/btn_apply_time_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:text="Apply"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/wood"
+        android:fontFamily="serif"
+        android:text="Set Lock Now"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="60dp"
+        android:textSize="12dp"
+        android:fontFamily="serif"
+        android:text="Instant lock the screen of child's device"/>
+
+    <Button
+        android:id="@+id/btn_apply_lock_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:text="Lock Now"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/wood"
+        android:fontFamily="serif"
+        android:text="Set Max Sleep Time"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="60dp"
+        android:textSize="12dp"
+        android:fontFamily="serif"
+        android:text="Enter how long you want your device to stay on before turning off due to inactivity"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_time_to_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Set Sleep Time to 15 seconds" />
+
+
+
+
+
+</LinearLayout>

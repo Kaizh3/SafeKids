@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:background="@color/white"
+    tools:context=".ui.profile.ProfileFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/profile_fragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center_vertical"
+        android:elevation="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/blue1">
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:fontFamily="serif"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:gravity="center_vertical"
+        app:cardCornerRadius="80dp"
+        android:layout_marginTop="-275dp"
+        app:cardBackgroundColor="@color/blue1">
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/account_img" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnAddChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_shape"
+        android:layout_marginTop="150dp"
+        android:padding="15dp"
+        android:textSize="18dp"
+        android:text="Add Child" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_shape"
+        android:text="Log out"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

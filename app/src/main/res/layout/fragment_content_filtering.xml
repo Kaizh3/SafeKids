@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="6dp"
+    tools:context=".ui.feature.fragment.ContentFilteringFragment">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:background="@drawable/round_shape"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:text="DNS FILTERING STATE  : "
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_DNS_filtering_state"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="serif"
+                android:text="Method 1"
+                android:textStyle="bold"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Step 1: Go to Settings > Network and Internet > Wifi"
+                android:textSize="18dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Long press the connected wifi and click Modify network"
+                android:textSize="18dp" />
+            
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/wifi_state_1_1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Step 2: Click advanced option and change DHCP to Static"
+                android:textSize="18dp"
+                android:paddingTop="10dp" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/wifi_state_1_2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Step 3: Click advanced option and change DHCP to Static"
+                android:textSize="18dp"
+                android:paddingTop="10dp" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/wifi_state_1_3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Step 4: Fill in the IP address, Gateway, Network Prefix length, DNS1 and DNS 2 according to the text below "
+                android:textSize="18dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_wifi_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:background="@drawable/round_shape"
+                android:fontFamily="serif"
+                android:textSize="18dp"
+                android:padding="2dp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Method 2"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Step 1: Go to Settings > Network and Internet > Advanced > Private DNS"
+                android:textSize="18dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text=" *Only Android 9 and above can use this method"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/wifi_state_2_1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Step 2: Select Private DNS provider hostname"
+                android:textSize="18dp"
+                android:paddingTop="10dp" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/wifi_state_2_2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Step 3:Enter text below as the hostname of the DNS provider. "
+                android:textSize="18dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="family-filter-dns.cleanbrowsing.org"
+                android:textSize="18dp"
+                android:fontFamily="serif"
+                android:layout_marginStart="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="6dp"
+    tools:context=".ui.feature.fragment.DeviceRestrictionFragment"
+    android:id="@+id/fragment_disable_feature">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/wood"
+        android:fontFamily="serif"
+        android:text="Device Restriction"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_disable_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable Camera" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_disable_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable Screenshot" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_disable_gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable GPS" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_disable_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable Network" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_disable_network_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable Network Share" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_airplane_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable Airplane Mode" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable Bluetooth" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Disable Wifi" />
+
+</LinearLayout>
